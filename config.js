@@ -2,10 +2,10 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
+    return text === fault ? true : true;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "", //paste your session_id
+SESSION_ID: process.env.SESSION_ID || "u2wlSDYQ#gTZkN64apuC0ImEEwzm5N2dCHzIqS0h-1SdDLCJZ85I"
 AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true", 
 MODE: process.env.MODE || "public",
 AUTO_VOICE: process.env.AUTO_VOICE || "true",
